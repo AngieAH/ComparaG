@@ -1,19 +1,149 @@
-{% extends 'base.html' %}
-
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>{% block title %}Welcome Home {% endblock %}</title>
-</head>
-<body>
-  {% block pagecontent %}
-    <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-      Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
-      Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
-      Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
-    </p>
-    {% include 'partials/nav-bar.html' %} <!--Add this-->
-  {% endblock %}
-</body>
+
+	<head>
+	  <meta charset="UTF-8">
+	  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	  <meta name="description" content="">
+	  <meta name="author" content="">
+
+	  <title>{% block title %}ComparaGuru {% endblock %}</title>
+
+	  <!-- Bootstrap core CSS -->
+	  <link href="static/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+	  <!-- Custom fonts for this template -->
+	  <link href="static/vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+	  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+	  <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
+	  <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+	  <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+
+<link href="https://fonts.googleapis.com/css?family=Courgette" rel="stylesheet">
+
+
+	  <!-- Custom styles for this template -->
+	  <link href="static/css/agency.min.css" rel="stylesheet">
+
+	</head>
+	<body id="page-top">
+			  <!-- Navigation -->
+		<nav class="navbar navbar-expand-lg navbar-dark fixed-top navbar-shrink" id="mainNav">
+		  <div class="container">		    
+        <a href="#page-top" class="navbar-brand js-scroll-trigger" ata-event="home_logo_clicked"><img src="static/img/comparaguru-logo.png" alt="ComparaGuru" width="146" height="33"></a>
+		    <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+		     
+		      <i class="fa fa-bars"></i>
+		    </button>
+		    <div class="collapse navbar-collapse" id="navbarResponsive">
+		      <ul class="navbar-nav ml-auto">
+		        <li class="nav-item">
+		          <a class="nav-link js-scroll-trigger" href="#services">Feed</a>
+		        </li>
+		        <li class="nav-item">
+		          <a class="nav-link js-scroll-trigger" href="#portfolio">Authors</a>
+		        </li>
+		        <li class="nav-item">
+		          <a class="nav-link js-scroll-trigger" href="#about">Explore</a>
+		        </li>
+		        <li class="nav-item">
+		          <a class="nav-link js-scroll-trigger" href="#team">Blog</a>
+		        </li>
+		        <li class="nav-item">
+		          <a class="nav-link js-scroll-trigger" href="#contact">Contacts</a>
+		        </li>
+		      </ul>
+		    </div>
+		  </div>
+		</nav>
+
+
+		    <!-- Header -->
+    <header class="masthead">
+      <div class="container">
+        <div class="intro-text">
+          <div class="intro-lead-in">El seguro de auto que si vas a entender</div>
+          <div class="intro-heading">Precios increibles y la mejor experiencia de compra.</div>
+          <a class="btn btn-xl js-scroll-trigger" href="#services">Cotizar Ahora</a>
+          <br><br>
+          <div class="hp-section">
+            <a href="#" id="gtm_link_watch_the_video_above_the_fold" class="link-video js-btn-video"><i></i>Ver Video de ComparaGuru</a>
+          </div>
+        </div>
+      </div>
+    </header>
+
+
+    <!-- Services -->
+    <section id="services">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12 text-center">
+            <h2 class="section-heading">Un Gurú te acompañará siempre</h2>
+            <h3 class="section-subheading text-muted">En la compra, en tus pagos, en caso de accidente y en tu renovación.</h3>
+          </div>
+        </div>
+        <div class="row text-center">
+          <div class="col-md-6">
+            <span class="fa-stack fa-4x">
+              <i class="fa fa-circle fa-stack-2x text-primary"></i>
+              <i class="fa fa-shopping-cart fa-stack-1x fa-inverse"></i>
+            </span>
+            <h4 class="service-heading">Compra</h4>
+          </div>
+          <div class="col-md-6">
+            <span class="fa-stack fa-4x">
+              <i class="fa fa-circle fa-stack-2x text-primary"></i>
+              <i class="fa fa-laptop fa-stack-1x fa-inverse"></i>
+            </span>
+            <h4 class="service-heading">Pagos</h4>
+          </div>
+          <div class="col-md-6">
+            <span class="fa-stack fa-4x">
+              <i class="fa fa-circle fa-stack-2x text-primary"></i>
+              <i class="fa fa-lock fa-stack-1x fa-inverse"></i>
+            </span>
+            <h4 class="service-heading">Siniestros</h4>
+           
+          </div>
+
+          <div class="col-md-6">
+            <span class="fa-stack fa-4x">
+              <i class="fa fa-circle fa-stack-2x text-primary"></i>
+              <i class="fa fa-shopping-cart fa-stack-1x fa-inverse"></i>
+            </span>
+            <h4 class="service-heading">Renovación</h4>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="timeline-body">
+        <p class="text-muted">El seguro de auto que si vas a tener</p>
+        <img class="rounded-circle img-fluid" src="static/img/about/4.jpg" alt="">
+      </div>
+    </section>
+
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="static/vendor/jquery/jquery.min.js"></script>
+    <script src="static/vendor/popper/popper.min.js"></script>
+    <script src="static/vendor/bootstrap/js/bootstrap.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="static/vendor/jquery-easing/jquery.easing.min.js"></script>
+
+    <!-- Contact form JavaScript -->
+    <script src="static/js/jqBootstrapValidation.js"></script>
+    <script src="static/js/contact_me.js"></script>
+
+    <!-- Custom scripts for this template -->
+    <script src="static/js/agency.min.js"></script>
+
+    <script src="static/js/vimeo.js"></script>
+
+
+	</body>
 </html>

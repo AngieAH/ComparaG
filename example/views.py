@@ -8,6 +8,9 @@ class HomePageView(TemplateView):
 class AboutPageView(TemplateView):
     template_name = "about.html"
 
+class SeguroDeAutos(TemplateView):
+    template_name = "seguro-de-autos.html"
+
 # Add this view
 class DataPageView(TemplateView):
     def get(self, request, **kwargs):

@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>{% block title %}{% endblock %}</title>
+</head>
+<body>
+  {% block pagecontent %}
+    {% include 'partials/nav-bar.html' %} <!--Add this-->
+    {% include 'partials/seguro-de-autos.html' %}
+  {% endblock %}
+</body>
+</html>
